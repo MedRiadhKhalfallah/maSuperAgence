@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd266c9b-61dd-4e78-b1e2-de14bf728fa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminAmeniController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/AmeniType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ameni/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ameni/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ameni/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/ameni/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/property/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/property/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/forms.fr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01d1154a-397e-4c40-b1e4-984043d1c237.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/01d1154a-397e-4c40-b1e4-984043d1c237.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-    </list>
+    <list default="true" id="bd266c9b-61dd-4e78-b1e2-de14bf728fa6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -104,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminAmeniController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+            <state relative-caret-position="455">
+              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
               <folding>
                 <element signature="e#42#63#0#PHP" expanded="true" />
                 <element signature="e#1236#1255#1#PHP" expanded="true" />
@@ -437,7 +418,7 @@
       <workItem from="1560362976919" duration="2486000" />
       <workItem from="1560873525367" duration="47000" />
       <workItem from="1560888012267" duration="432000" />
-      <workItem from="1560978102315" duration="4420000" />
+      <workItem from="1560978102315" duration="4726000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1559913846937</created>
@@ -446,11 +427,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559913846938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="crud final">
+      <created>1560982707154</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560982707154</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35343000" />
+    <option name="totallyTimeSpent" value="35649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -483,7 +471,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="crud final" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud final" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml">
@@ -776,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminAmeniController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        <state relative-caret-position="455">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
             <element signature="e#42#63#0#PHP" expanded="true" />
             <element signature="e#1236#1255#1#PHP" expanded="true" />
