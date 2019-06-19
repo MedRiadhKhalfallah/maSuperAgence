@@ -14,3 +14,29 @@ property.show:
   controller: App\Controller\PropertyController::show
   requirements:
     slug: '[a-z0-9\-]*'
+
+admin.property.index:
+  path: /admin
+  controller: App\Controller\Admin\AdminPropertyController::index
+admin.property.new:
+  path: /admin/property/create
+  controller: App\Controller\Admin\AdminPropertyController::new
+
+admin.property.edit:
+  path: /admin/property/{id}
+  controller: App\Controller\Admin\AdminPropertyController::edit
+
+admin.ameni.index:
+  path: /admin/ameni
+  controller: App\Controller\Admin\AdminAmeniController::index
+admin.ameni.new:
+  path: /admin/ameni/create
+  controller: App\Controller\Admin\AdminAmeniController::new
+admin.ameni.edit:
+  path: /admin/ameni/{id}
+  controller: App\Controller\Admin\AdminAmeniController::edit
+  methods: "GET|POST"
+admin.ameni.delete:
+  path: /admin/ameni/{id}
+  controller: App\Controller\Admin\AdminAmeniController::delete
+  methods: "DELETE"

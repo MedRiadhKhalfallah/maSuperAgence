@@ -70,21 +70,26 @@ class Property
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $postal_code;
+    private $postalCode;
 
     /**
-     * @ORM\Column(type="boolean" , options={"default":false})
+     * @ORM\Column(type="boolean" , nullable=true, options={"default":false})
      */
-    private $sold;
+    private $sold=false;
 
     /**
      * @ORM\Column(type="datetime")
      */
-    private $created_at;
+    private $createdAt;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $test;
 
     public function __construct()
     {
-        $this->created_at = new \DateTime();
+        $this->createdAt = new \DateTime();
     }
 
     public function getId(): ?int
@@ -228,12 +233,12 @@ class Property
 
     public function getPostalCode(): ?string
     {
-        return $this->postal_code;
+        return $this->postalCode;
     }
 
     public function setPostalCode(string $postal_code): self
     {
-        $this->postal_code = $postal_code;
+        $this->postalCode = $postal_code;
 
         return $this;
     }
@@ -252,12 +257,24 @@ class Property
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $created_at;
+
+        return $this;
+    }
+
+    public function getTest(): ?string
+    {
+        return $this->test;
+    }
+
+    public function setTest(string $test): self
+    {
+        $this->test = $test;
 
         return $this;
     }

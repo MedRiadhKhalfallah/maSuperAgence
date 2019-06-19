@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{% block title 'Gerer les biens' %}
+{% block body %}
+
+    <div class="container mt-4">
+        <h1> Gerer les biens</h1>
+        {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+        {% endfor %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>titre</th>
+                <th>actin</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for ameni in amenis %}
+                <tr>
+                    <td>{{ ameni.name }}</td>
+                    <td><a href="{{ path('admin.ameni.edit',{id:ameni.id}) }}"
+                           class="btn btn-secondary">Editer</a>
+                        <form method="post"
+                              action="{{ path('admin.ameni.delete',{id:ameni.id}) }}"
+                              style="display: inline-block"
+                        onsubmit="return confirm('ete vous sur de supprimer ameni?')">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ ameni.id) }}">
+                            <button class="btn btn-danger" >Supprimer</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+        <div class="text-right">
+            <a href="{{ path('admin.ameni.new') }}" class="btn btn-primary">Créer un nouveau ameni</a>
+        </div>
+    </div>
+
+
+{% endblock %}
