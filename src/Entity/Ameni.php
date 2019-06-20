@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Entity;
-
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AmeniRepository")
+ * @UniqueEntity("name")
  */
 class Ameni
 {
@@ -18,6 +20,7 @@ class Ameni
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^\w+/")
      */
     private $name;
 
@@ -28,6 +31,7 @@ class Ameni
 
     /**
      * @ORM\Column(type="integer", nullable=true)
+     * @Assert\Range(min="1",max="120")
      */
     private $age;
 
